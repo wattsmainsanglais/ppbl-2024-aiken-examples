@@ -7,18 +7,14 @@ pub type Redeemer {
 
 validator my_example {
 
-    fn spend(_datum, redeemer: Redeemer , _input: OutputReference, tx: Transaction) {
+   spend(_datum, redeemer: Redeemer , _input: OutputReference, tx: Transaction) {
         
         let Transaction {validity_range, ..} = tx
 
         let lock_until = 178515515151
-        let must_msg = _redeemer.msg == "Hello"
+        let must_msg = redeemer.msg == "Hello"
 
-        must_start_after(validity_range, lock_until)
-
-        and
-
-        must_msg
+        must_start_after(validity_range, lock_until)&&must_msg
 
     } else(_){
         fail

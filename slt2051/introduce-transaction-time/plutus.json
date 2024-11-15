@@ -1,0 +1,73 @@
+{
+  "preamble": {
+    "title": "ppbl2024/introduce-transaction-time",
+    "description": "Aiken contracts for project 'ppbl2024/introduce-transaction-time'",
+    "version": "0.0.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.6+unknown"
+    },
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "introduce_transaction_time.introduce_transaction_time.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "58850101003232323232253330023232323232323253330093370e900118051baa00113371290707540506bb21bad300c300b37540022940c004c028dd5180098051baa300b300c300c300c300c300c300c300c300a3754600260146ea801c8c02c004c024c02800cc020008c01c008c01c004c010dd50008a4c26cacae6955ceaab9e5742ae89",
+      "hash": "5eb052f501f30e946b22c514579a73329c01d52d88cf71495255a3e0"
+    },
+    {
+      "title": "my_example.my_example.spend",
+      "datum": {
+        "title": "_datum",
+        "schema": {
+          "$ref": "#/definitions/Data"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/my_example~1Redeemer"
+        }
+      },
+      "compiledCode": "58e401010032323232323225333002323232323253330073370e900118041baa0011323322533300a3370e900018059baa00513232533300f301100213232533300e32533300f3370e900118081baa001133712904f6e6a42d9051bad3013301137540022940c008c040dd5180118081baa301230133013301330133013301330133010375401420022940cdc79bae3001300f37540109110548656c6c6f002301100116375c601e00260186ea801458c030004c030c034004c024dd50008b1805180580198048011804001180400098021baa00114984d9595cd2ab9d5573caae7d5d0aba21",
+      "hash": "0b9b9c392caf26c503d931b466bf5f88b41890ff65024c375b4fa009"
+    },
+    {
+      "title": "my_example.my_example.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "58e401010032323232323225333002323232323253330073370e900118041baa0011323322533300a3370e900018059baa00513232533300f301100213232533300e32533300f3370e900118081baa001133712904f6e6a42d9051bad3013301137540022940c008c040dd5180118081baa301230133013301330133013301330133010375401420022940cdc79bae3001300f37540109110548656c6c6f002301100116375c601e00260186ea801458c030004c030c034004c024dd50008b1805180580198048011804001180400098021baa00114984d9595cd2ab9d5573caae7d5d0aba21",
+      "hash": "0b9b9c392caf26c503d931b466bf5f88b41890ff65024c375b4fa009"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Data": {
+      "title": "Data",
+      "description": "Any Plutus data."
+    },
+    "my_example/Redeemer": {
+      "title": "Redeemer",
+      "anyOf": [
+        {
+          "title": "Redeemer",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "msg",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
