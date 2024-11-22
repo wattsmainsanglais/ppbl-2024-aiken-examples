@@ -6,7 +6,7 @@
 validator_path=$1
 min_utxo_lovelace=$2
 
-reference_address=addr_test1qpy5pxpz96h673r9qu592hurf2tw72nx6fn5eytksgf5ghydkhtdsytfajqartg2jpd0p4kt3frs6ga579a05w6hy8nqtvjuqj
+reference_address=addr_test1wqlf3rtpxy0pk5yumt3uceyjyfhk38690vh8zhdmez0am5s0hmzmg
 
 tx_in_fees=$(get_address_biggest_lovelace ${sender})
 
