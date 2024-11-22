@@ -28,5 +28,3 @@ cardano-cli transaction sign \
 cardano-cli transaction submit \
 --tx-file deploy-reference-script.signed \
 --testnet-magic 1
-
-
