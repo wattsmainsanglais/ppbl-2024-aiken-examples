@@ -14,10 +14,10 @@ tx_in_fees=$(get_address_biggest_lovelace ${sender})
 
 cardano-cli conway transaction build \
   --testnet-magic 1 \
-  --tx-in $tx_in_fees \
-  --tx-out $reference_scripts_addr+$min_utxo_lovelace \
-  --tx-out-reference-script-file $validator_path \
-  --change-address $sender \
+  --tx-in ca1bfc580b408f05f3172b311c1bd854cca9971478651002c5328b9420f69269#0 \
+  --tx-out addr_test1wqlf3rtpxy0pk5yumt3uceyjyfhk38690vh8zhdmez0am5s0hmzmg+0 \
+  --tx-out-reference-script-file slt2054.plutus \
+  --change-address addr_test1vqqxcn992d3c9vvuzzc59zu9hz3rshus4juwwg8luh5tx0q0hh5s4 \
   --out-file deploy-reference-script.draft
 
 cardano-cli conway transaction sign \

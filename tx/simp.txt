@@ -1,0 +1,12 @@
+tx_in=ca1bfc580b408f05f3172b311c1bd854cca9971478651002c5328b9420f69269#0
+receiver=addr_test1qz72rfhqp7d2q2c32f95yz60ghrp38fgz82da735r5tn589tjzert4m55umpkyj4urevug5ae7t6y93cavh65kxwvxtqs5te6a
+sender=addr_test1vqqxcn992d3c9vvuzzc59zu9hz3rshus4juwwg8luh5tx0q0hh5s4
+sender_key=payment.skey
+
+cardano-cli conway transaction build \
+--testnet-magic 1 \
+--tx-in ca1bfc580b408f05f3172b311c1bd854cca9971478651002c5328b9420f69269#0 \
+--tx-out addr_test1qz72rfhqp7d2q2c32f95yz60ghrp38fgz82da735r5tn589tjzert4m55umpkyj4urevug5ae7t6y93cavh65kxwvxtqs5te6a+5000000 \
+--change-address addr_test1vqqxcn992d3c9vvuzzc59zu9hz3rshus4juwwg8luh5tx0q0hh5s4 \
+--out-file simple-tx.draft
+
