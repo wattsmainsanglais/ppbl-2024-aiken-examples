@@ -7,6 +7,7 @@ validator_path=$1
 min_utxo_lovelace=$2
 
 reference_address=addr_test1wqlf3rtpxy0pk5yumt3uceyjyfhk38690vh8zhdmez0am5s0hmzmg
+sender_key=payment.skey
 
 tx_in_fees=$(get_address_biggest_lovelace ${sender})
 
