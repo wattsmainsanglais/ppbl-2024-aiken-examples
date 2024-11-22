@@ -12,8 +12,7 @@ reference_address=addr_test1wqlf3rtpxy0pk5yumt3uceyjyfhk38690vh8zhdmez0am5s0hmzm
 
 tx_in_fees=$(get_address_biggest_lovelace ${sender})
 
-cardano-cli transaction build \
---babbage-era \
+cardano-cli conway transaction build \
 --testnet-magic 1 \
 --tx-in $tx_in_fees \
 --tx-out $reference_address+$min_utxo_lovelace \
