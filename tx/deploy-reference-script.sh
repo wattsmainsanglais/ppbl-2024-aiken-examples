@@ -20,12 +20,12 @@ cardano-cli conway transaction build \
 --change-address $sender \
 --out-file deploy-reference-script.draft
 
-cardano-cli transaction sign \
+cardano-cli conway transaction sign \
 --signing-key-file $sender_key \
 --testnet-magic 1 \
 --tx-body-file deploy-reference-script.draft \
 --out-file deploy-reference-script.signed
 
-cardano-cli transaction submit \
+cardano-cli conway transaction submit \
 --tx-file deploy-reference-script.signed \
 --testnet-magic 1
