@@ -1,12 +1,12 @@
-tx_in=ca1bfc580b408f05f3172b311c1bd854cca9971478651002c5328b9420f69269#0
+tx_in=fc15d08d524a70a90d9cfd9fc7562f37b5cdcb6d8ca7fae9f36ea08843111ba4#0
 receiver=addr_test1qz72rfhqp7d2q2c32f95yz60ghrp38fgz82da735r5tn589tjzert4m55umpkyj4urevug5ae7t6y93cavh65kxwvxtqs5te6a
-sender=addr_test1vqqxcn992d3c9vvuzzc59zu9hz3rshus4juwwg8luh5tx0q0hh5s4
+sender=addr_test1qphs0hdjwu98tte26zq6pq92dp3hke5k52ccryktq4lcctsy0wx5k75z5k7fwpk8pjyzse47ldjt4y2awlvrsytcd9mqsz3wnu
 sender_key=payment.skey
 
 cardano-cli conway transaction build \
 --testnet-magic 1 \
---tx-in ca1bfc580b408f05f3172b311c1bd854cca9971478651002c5328b9420f69269#0 \
+--tx-in fc15d08d524a70a90d9cfd9fc7562f37b5cdcb6d8ca7fae9f36ea08843111ba4#0 \
 --tx-out addr_test1qz72rfhqp7d2q2c32f95yz60ghrp38fgz82da735r5tn589tjzert4m55umpkyj4urevug5ae7t6y93cavh65kxwvxtqs5te6a+5000000 \
---change-address addr_test1vqqxcn992d3c9vvuzzc59zu9hz3rshus4juwwg8luh5tx0q0hh5s4 \
+--change-address $(<payment.addr) \
 --out-file simple-tx.draft
 

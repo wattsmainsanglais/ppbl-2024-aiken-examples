@@ -3,6 +3,6 @@
 . env.sh
 . utils.sh
 
-reference_address=ppbl-2024-cli-wallet/payment.addr
+reference_address=addr_test1qphs0hdjwu98tte26zq6pq92dp3hke5k52ccryktq4lcctsy0wx5k75z5k7fwpk8pjyzse47ldjt4y2awlvrsytcd9mqsz3wnu
 
-cardano-cli query utxo --testnet-magic 1 --address $reference_address
+cardano-cli query utxo --testnet-magic 1 --address addr_test1qphs0hdjwu98tte26zq6pq92dp3hke5k52ccryktq4lcctsy0wx5k75z5k7fwpk8pjyzse47ldjt4y2awlvrsytcd9mqsz3wnu
